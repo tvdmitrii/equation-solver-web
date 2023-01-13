@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, ViewChild, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'equation-solver-web';
+  @Input() content?: string;
+
+  ngOnInit(): void {
+
+    this.content = "int x = 13";
+   }
+
 }
