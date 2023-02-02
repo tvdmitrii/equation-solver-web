@@ -16,27 +16,16 @@
   overflow: auto;
 }
 
-.item-code-col {
+.item-code-editor {
   flex: 2;
-  overflow:auto;
+  overflow: auto;
   margin: 10px;
   margin-right: 5px;
   border-radius: 10px;
 }
 
-.item-panel-col {
+.item-side-bar {
   flex: 1;
   margin: 10px;
   margin-left: 5px;
-}
-
-:host() ::ng-deep .CodeMirror{
-  height: 100%;
-  border-radius: 10px;
-}
-
-.tabs{
-  height: 100%;
-  border-radius: 10px;
-  overflow: hidden;
 }

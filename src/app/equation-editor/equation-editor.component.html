@@ -1,0 +1,23 @@
+<mat-card class="code-editor-wrapper">
+    <div class="code-editor-header">
+        <div style="display: flex; flex-flow: row nowrap; justify-content: space-between;">
+        <mat-card style="flex: 0 0 auto;">
+        </mat-card>
+        <button mat-fab extended color="warn" style="flex: 0 0 auto;margin: 5px;">
+            <mat-icon>play_circle_filled</mat-icon>
+            Solve
+          </button>
+          </div>
+    </div>
+
+    <div class="code-editor">
+        <ngx-codemirror
+            [(ngModel)]="content"
+            [options]="{
+            lineNumbers: true,
+            theme: 'material-darker',
+            mode: 'python'
+            }"
+        ></ngx-codemirror>
+    </div>
+</mat-card>
