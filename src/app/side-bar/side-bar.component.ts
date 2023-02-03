@@ -6,6 +6,11 @@ interface SettingItem{
   formControl: FormControl;
 }
 
+interface Variable{
+  name: string;
+  value: number;
+}
+
 @Component({
   selector: 'app-side-bar',
   templateUrl: './side-bar.component.html',
@@ -24,6 +29,12 @@ export class SideBarComponent {
                     Validators.pattern('[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?')])},
     { label: 'Rounding Places', formControl: new FormControl('3',[Validators.required, 
                     Validators.pattern('[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?')])}
+  ];
+
+  solvedVariables: Variable[] = [
+    {name: "a", value: 300},
+    {name: "b", value: 14},
+    {name: "c", value: -3}
   ];
 
   getNumErrorMessage(formControl: FormControl) {

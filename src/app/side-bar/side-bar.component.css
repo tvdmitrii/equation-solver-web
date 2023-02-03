@@ -30,3 +30,21 @@
 :host ::ng-deep .mdc-form-field label {
     font-size: large;
 }
+
+.solution-container{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.solution-card{
+    flex: 0 0 auto;
+    margin: 5px;
+}
+
+.variable-value{
+    color: #FF5370;
+}
+
+.variable-name{
+    color: #FFCB6B;
+}

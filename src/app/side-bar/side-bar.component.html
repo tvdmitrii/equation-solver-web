@@ -1,6 +1,15 @@
 <mat-tab-group color="basic" backgroundColor="primary" class="tabs mat-elevation-z4">
-    <mat-tab label="Solution"></mat-tab>
-        
+    <mat-tab label="Solution">
+        <div class="solution-container">
+            <mat-card class="solution-card" *ngFor="let solvedVar of solvedVariables">
+                <mat-card-content class="solution-card-content">
+                    <mat-label color="primary" class="variable-name">{{solvedVar.name}}</mat-label>
+                    =
+                    <mat-label color="accent" class="variable-value">{{solvedVar.value}}</mat-label>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </mat-tab>
     <mat-tab label="Guess Values"></mat-tab>
     <mat-tab label="Settings">
         <div class="settings-container">
