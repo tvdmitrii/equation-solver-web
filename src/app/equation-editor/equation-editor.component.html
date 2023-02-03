@@ -1,5 +1,5 @@
 <mat-card class="code-editor-wrapper">
-    <div class="code-editor-header">
+    <!--<div class="code-editor-header">
         <div style="display: flex; flex-flow: row nowrap; justify-content: space-between;">
         <mat-card style="flex: 0 0 auto;">
         </mat-card>
@@ -8,11 +8,11 @@
             Solve
           </button>
           </div>
-    </div>
+    </div>-->
 
     <div class="code-editor">
         <ngx-codemirror
-            [(ngModel)]="content"
+            [(ngModel)]="equations"
             [options]="{
             lineNumbers: true,
             theme: 'material-darker',

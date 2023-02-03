@@ -13,6 +13,9 @@ import { CodemirrorModule } from '@ctrl/ngx-codemirror';
 import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
 import { EquationEditorComponent } from './equation-editor/equation-editor.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
+import { SettingsTabComponent } from './settings-tab/settings-tab.component';
+import { SolutionTabComponent } from './solution-tab/solution-tab.component';
+import { GuessValuesTabComponent } from './guess-values-tab/guess-values-tab.component';
 
 
 
@@ -21,7 +24,10 @@ import { SideBarComponent } from './side-bar/side-bar.component';
     AppComponent,
     NavigationBarComponent,
     EquationEditorComponent,
-    SideBarComponent
+    SideBarComponent,
+    SettingsTabComponent,
+    SolutionTabComponent,
+    GuessValuesTabComponent
   ],
   imports: [
     BrowserModule,

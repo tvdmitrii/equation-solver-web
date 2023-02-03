@@ -6,11 +6,10 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./equation-editor.component.css']
 })
 export class EquationEditorComponent {
-  @Input() content?: string;
+  @Input() equations: string = "";
 
   ngOnInit(): void {
-
-    this.content = "int x = 13";
+    this.equations = "int x = 13";
    }
 
 }
