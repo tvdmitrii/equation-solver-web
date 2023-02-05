@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 import { EquationVariable } from '../EquationVariable';
 
 @Component({
@@ -7,5 +8,5 @@ import { EquationVariable } from '../EquationVariable';
   styleUrls: ['./guess-values-tab.component.css']
 })
 export class GuessValuesTabComponent {
-  @Input() guessValues: EquationVariable[] = [];
+  @Input() guessValuesForm: FormGroup = new FormGroup({});
 }

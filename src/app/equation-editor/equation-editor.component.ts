@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-equation-editor',
@@ -6,10 +7,12 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./equation-editor.component.css']
 })
 export class EquationEditorComponent {
-  @Input() equations: string = "";
+  @Input() equationsControl: FormControl = new FormControl({});
+  equations: string = '';
 
   ngOnInit(): void {
-    this.equations = "int x = 13";
-   }
+    this.equations = 'int x = 13';
+    this.equationsControl.addValidators(Validators.required);
+  }
 
 }

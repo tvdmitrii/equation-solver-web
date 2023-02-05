@@ -1,0 +1,18 @@
+.solution-container{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 10px;
+}
+
+.solution-card{
+    flex: 0 0 auto;
+    margin: 5px;
+}
+
+.variable-value{
+    color: #FF5370;
+}
+
+.variable-name{
+    color: #FFCB6B;
+}

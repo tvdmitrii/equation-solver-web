@@ -1,1 +1,9 @@
-<p>solution-tab works!</p>
+<div class="solution-container">
+    <mat-card class="solution-card" *ngFor="let solvedVar of solution">
+        <mat-card-content class="solution-card-content">
+            <mat-label color="primary" class="variable-name">{{solvedVar.name}}</mat-label>
+            =
+            <mat-label color="accent" class="variable-value">{{solvedVar.value}}</mat-label>
+        </mat-card-content>
+    </mat-card>
+</div>

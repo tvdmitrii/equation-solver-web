@@ -20,7 +20,6 @@ export class SettingsTabComponent {
 
   ngOnInit(): void {
     for (let settingItem of this.settings) {
-      console.log(settingItem.name);
       let formControl = new FormControl(settingItem.defaultValue, [Validators.required]);
       if (settingItem.type == 'number') {
         formControl.addValidators(Validators.pattern('[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?'));

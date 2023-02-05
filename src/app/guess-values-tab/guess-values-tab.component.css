@@ -1,0 +1,26 @@
+.guess-values-container {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 10px;
+}
+
+.guess-value-card {
+    margin: 5px;
+    flex: 0 0 auto;
+}
+
+.guess-value-card-content {
+    flex: 1;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.guess-value-card-label {
+    font-size: large;
+}
+
+/*:host ::ng-deep .mdc-form-field label {
+    font-size: large;
+}*/

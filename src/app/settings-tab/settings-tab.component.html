@@ -11,7 +11,7 @@
 
             <mat-form-field *ngIf="settingItem.type == 'number'" color="accent" class="setting-card-input">
                 <input matInput formControlName={{settingItem.name}} required>
-                <mat-error *ngIf="settingItem.type == 'number' && settingsForm.get(settingItem.name)?.invalid">Enter a
+                <mat-error *ngIf="settingsForm.get(settingItem.name)?.invalid">Enter a
                     valid number!</mat-error>
             </mat-form-field>
         </mat-card-content>

@@ -1,1 +1,12 @@
-<p>guess-values-tab works!</p>
+<form [formGroup]="guessValuesForm" class="guess-values-container">
+    <mat-card class="guess-value-card" *ngFor="let guessValueControl of guessValuesForm.controls | keyvalue">
+        <mat-card-content class="guess-value-card-content">
+            <label class="guess-value-card-label">{{guessValueControl.key}}</label>
+
+            <mat-form-field color="accent" class="guess-value-card-input">
+                <input matInput formControlName={{guessValueControl.key}} required>
+                <mat-error *ngIf="guessValueControl.value.invalid">Enter a valid number!</mat-error>
+            </mat-form-field>
+        </mat-card-content>
+    </mat-card>
+</form>
