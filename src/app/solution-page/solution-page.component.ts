@@ -2,23 +2,19 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { catchError, tap } from 'rxjs';
-import { EquationVariable } from './EquationVariable';
-import { SettingItem } from './SettingItem';
-import { SolutionResponse } from './SolutionResponse';
+import { EquationVariable } from '../EquationVariable';
+import { SolutionResponse } from '../SolutionResponse';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-solution-page',
+  templateUrl: './solution-page.component.html',
+  styleUrls: ['./solution-page.component.css']
 })
-export class AppComponent {
-
-  title = 'Equation Solver';
+export class SolutionPageComponent {
 
   constructor(private _snackBar: MatSnackBar, private http: HttpClient){}
 
-  private solutionRequestURL = 'https://localhost/api/solution_request';  // URL to web api
+  private solutionRequestURL = 'http://localhost:5000/api/solution_request';  // URL to web api
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
   };
@@ -69,7 +65,6 @@ export class AppComponent {
     } else {
       this.openSnackBar("There was an error: " + result.error);
     }
-
-    
   }
+
 }

@@ -11,7 +11,7 @@ export class EquationEditorComponent {
   equations: string = '';
 
   ngOnInit(): void {
-    this.equations = 'int x = 13';
+    this.equations = "PV = 1000 # $\nr = 0.055 # 5.5%\nFV = 5000 # $\n\nFV = PV*(1 + r)^n";
     this.equationsControl.addValidators(Validators.required);
   }
 

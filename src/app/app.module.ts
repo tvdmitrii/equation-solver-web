@@ -12,10 +12,19 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CodemirrorModule } from '@ctrl/ngx-codemirror';
 import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
 import { EquationEditorComponent } from './equation-editor/equation-editor.component';
-import { SideBarComponent } from './side-bar/side-bar.component';
 import { SettingsTabComponent } from './settings-tab/settings-tab.component';
 import { SolutionTabComponent } from './solution-tab/solution-tab.component';
 import { GuessValuesTabComponent } from './guess-values-tab/guess-values-tab.component';
+import { HttpClientModule } from '@angular/common/http';
+import { MatCardModule } from '@angular/material/card';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatOptionModule } from '@angular/material/core';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatIconModule } from '@angular/material/icon';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { SolutionPageComponent } from './solution-page/solution-page.component';
+import { AboutPageComponent } from './about-page/about-page.component';
 
 
 
@@ -24,19 +33,21 @@ import { GuessValuesTabComponent } from './guess-values-tab/guess-values-tab.com
     AppComponent,
     NavigationBarComponent,
     EquationEditorComponent,
-    SideBarComponent,
     SettingsTabComponent,
     SolutionTabComponent,
-    GuessValuesTabComponent
+    GuessValuesTabComponent,
+    SolutionPageComponent,
+    AboutPageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NoopAnimationsModule,
-    MaterialModule,
     FormsModule,
     ReactiveFormsModule,
-    CodemirrorModule
+    MaterialModule,
+    CodemirrorModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

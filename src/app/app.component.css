@@ -10,28 +10,6 @@
 }
 
 .item-content-row {
-  flex: 1;
-  display: flex;
-  flex-flow: row nowrap;
+  flex-grow: 1;
   overflow: auto;
-}
-
-.item-code-editor {
-  flex: 2;
-  overflow: auto;
-  margin: 10px;
-  margin-right: 5px;
-  border-radius: 10px;
-}
-
-.item-side-bar {
-  flex: 1;
-  margin: 10px;
-  margin-left: 5px;
-}
-
-.tabs {
-  height: 100%;
-  border-radius: 10px;
-  overflow: hidden;
 }

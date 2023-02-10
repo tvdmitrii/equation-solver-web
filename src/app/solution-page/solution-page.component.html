@@ -1,0 +1,29 @@
+<div class="solution-page">
+    <button mat-fab extended color="warn" style="flex: 0 0 auto;margin: 5px;" (click)="sendSolveRequest()">
+        <mat-icon>play_circle_filled</mat-icon>
+        Solve
+    </button>
+
+    <app-equation-editor [equationsControl]="equationsControl"
+        class="item-code-editor mat-elevation-z4"></app-equation-editor>
+
+    <div class="item-side-bar">
+
+        <mat-tab-group color="basic" backgroundColor="primary" class="tabs mat-elevation-z4">
+
+            <mat-tab label="Solution">
+                <app-solution-tab [solution]="solution"></app-solution-tab>
+            </mat-tab>
+
+            <mat-tab label="Guess Values">
+                <app-guess-values-tab [guessValuesForm]="guessValuesForm"></app-guess-values-tab>
+            </mat-tab>
+
+            <mat-tab label="Settings">
+                <app-settings-tab [settingsForm]="settingsForm"></app-settings-tab>
+            </mat-tab>
+
+        </mat-tab-group>
+
+    </div>
+</div>
