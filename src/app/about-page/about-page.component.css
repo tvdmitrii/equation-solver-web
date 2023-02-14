@@ -1,0 +1,19 @@
+.about-container{
+    display: flex;
+    height: 100%;
+    flex-flow: row nowrap;
+    overflow: auto;
+}
+
+.about-spacer{
+    flex: 1;
+}
+
+.about-content{
+    margin: 10px;
+    flex: 5;
+    font-size: large;
+}
+.about-section{
+    margin: 5px;
+}

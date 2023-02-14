@@ -18,7 +18,7 @@ export class AppComponent {
 
   constructor(private _snackBar: MatSnackBar, private http: HttpClient){}
 
-  private solutionRequestURL = 'https://localhost/api/solution_request';  // URL to web api
+  private solutionRequestURL = 'https://localhost:5000/api/solution_request';  // URL to web api
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
   };

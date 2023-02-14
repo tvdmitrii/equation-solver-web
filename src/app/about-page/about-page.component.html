@@ -1,1 +1,74 @@
-<p>about-page works!</p>
+<div class="about-container">
+    <div class="about-spacer">
+    </div>
+
+    <div class="about-content">
+        <mat-card class="about-section">
+            <mat-card-header>
+                <mat-card-title>Overview</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <p>
+                    This is a proof of concept iterative equation solver which uses Broyden's
+                    method to find roots for sets of implicit equations, resulting
+                    in a powerful tool for modeling physical systems. The key feature of
+                    the solver is the use of, what I call, Equation Modeling Language which
+                    has a C++-like grammar but uses equations as the main building block,
+                    instead of simple assignments.
+                </p>
+
+                <p>
+                    This is not a Wolfram|Alpha alternative. For example, it will not find both
+                    roots of a quadratic equation, or it will not solve the equations symbolically.
+                    Equation Modelling Language is designed to give a convenient way to model
+                    engineering/physical systems which typically do not have multiple solutions.
+                    You can shift it to a specific solution by adjusting the guess values in the
+                    "Guess Value" tab.
+                </p>
+            </mat-card-content>
+        </mat-card>
+
+        <mat-card class="about-section">
+            <mat-card-header>
+                <mat-card-title>Example. Block on an Inclined Plane.</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <p>
+                    Consider a classical 2D physics problem, where one has a block of mass <i>M</i>
+                    on an inclined plane in a gravitational field with vector <b><i>g</i></b>
+                    pointing down. Friction is holding the block stationary. At a certain angle
+                    &alpha; between the inclined plane and the horizontal plane, the block will begin
+                    sliding. What is that angle, assuming that the friction coefficient &mu; is known?
+                </p>
+
+                <p>
+                    Easy! Just write down the governing equations! In this case, they are mainly
+                    Newton's second law equations along the inclined plane and perpendicular to the
+                    inclined plane:
+                </p>
+                <p>
+                    N - M * g * cos(alpha) = 0<br>
+                    F - M * g * sin(alpha) = 0<br>
+                    F = mu * N
+                </p>
+
+                <p>
+                    Eventually, one would also be able to conduct parametric studies to see how various
+                    parameters affect the result. Here, one would find that <i>M</i> and <i>g</i> make
+                    no difference. Of course, for such a simple system you can simplify the equations to
+                    <i>tan(&alpha;) = &mu;</i>. However, it would be less obvious for a much more
+                    complicated system where, for example, some variables come from thermodynamic property
+                    lookup tables.
+                </p>
+
+                <p>
+                    I believe this could be a powerful learning tool for both high-school students
+                    and research scientists.
+                </p>
+            </mat-card-content>
+        </mat-card>
+    </div>
+
+    <div class="about-spacer">
+    </div>
+</div>
