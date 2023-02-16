@@ -1,5 +1,5 @@
 # Equation Solver Web Interface
-This project is a front-end for [Equation Modeling Language Solver API](https://github.com/tvdmitrii/equation-solver-api). It has been created using the Angular framework (version 15) and Angular Material UI component library. Most of the element placement is done using Flexbox.
+This project is a front-end for [Equation Modeling Language Solver API](https://github.com/tvdmitrii/equation-solver-api). It has been created using the Angular framework (version 15) and Angular Material UI component library. Most of the element placement is done using Flexbox. The code editor component [ngx-codemirror](https://github.com/scttcper/ngx-codemirror) is a wrapper around [CodeMirror 5](https://codemirror.net/5/).
 
 # Architecture
 ## Component Hierarchy (components marked in bold)
